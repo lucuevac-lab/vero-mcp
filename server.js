@@ -38,7 +38,6 @@ const httpServer = http.createServer(async (req, res) => {
     res.end("Not found");
   }
 });
-Fix Render port configuration
 
 const PORT = process.env.PORT || 3000;
 
