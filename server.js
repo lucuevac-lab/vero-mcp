@@ -39,6 +39,8 @@ const httpServer = http.createServer(async (req, res) => {
   }
 });
 
-httpServer.listen(3000, () => {
-  console.log("MCP server running at http://localhost:3000/mcp");
+const PORT = process.env.PORT || 3000;
+
+httpServer.listen(PORT, () => {
+  console.log(`MCP server running on port ${PORT}`);
 });
