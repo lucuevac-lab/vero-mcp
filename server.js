@@ -31,7 +31,7 @@ const httpServer = http.createServer(async (req, res) => {
       sessionIdGenerator: undefined,
     });
 
-    await mcpServer.connect(transport);
+  
     await transport.handleRequest(req, res);
   } else {
     res.writeHead(404);
